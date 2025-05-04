@@ -36,21 +36,19 @@
 }
 
 .explore-card {
-  background: #fff;
-  border-radius: 10px;
-  box-shadow: 0 2px 10px rgba(0,0,0,0.07);
-  width: 368px;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  overflow: visible;
-  position: relative;
+  align-items: flex-start;
+  gap: 10px;
+  width: 368px; /* match image width */
+  cursor: pointer;
+  padding: 8px 0; /* vertical spacing above and below */
 }
 
 .explore-img-wrapper {
   width: 368px;
   height: 234px;
-  border-radius: 10px;
+  border-radius: 12px;
   overflow: hidden;
   position: relative;
 }
@@ -59,7 +57,7 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
-  display: block;
+  border-radius: 12px;
 }
 
 .explore-heart-btn {
@@ -93,8 +91,19 @@
   font-size: 1.03rem;
   font-weight: 400;
   color: #1a1a1a;
-  margin: 18px 0 10px 0;
+  margin: 24px 0 20px 0;
   text-align: center;
-  line-height: 1.2;
+  line-height: 1.3;
   max-width: 340px;
+  word-break: break-word;
+  white-space: normal;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.explore-card-subtitle {
+  font-size: 14px;
+  color: #717171;
 }
