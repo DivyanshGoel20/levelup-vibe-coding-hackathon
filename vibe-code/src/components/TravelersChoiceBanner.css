@@ -1,0 +1,216 @@
+.tc-banner {
+  width: 100%;
+  background: #fff7e1; /* Light cream background similar to the example */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+  min-height: 360px; /* Increased height */
+  border: none;
+  box-sizing: border-box;
+  overflow: hidden; /* Ensures content outside the banner is hidden */
+  position: relative; /* For absolute positioning children */
+}
+
+/* Decorative circles as separate elements for better positioning */
+.tc-circle-yellow {
+  position: absolute;
+  width: 300px; /* Increased size */
+  height: 300px;
+  border-radius: 50%;
+  background: #FFD43B;
+  opacity: 0.8;
+  left: 0;
+  top: -120px;
+  z-index: 1;
+}
+
+.tc-circle-green {
+  position: absolute;
+  width: 260px; /* Increased size */
+  height: 260px;
+  border-radius: 50%;
+  background: #4ADE80;
+  opacity: 0.7;
+  right: 2%;
+  bottom: -100px;
+  z-index: 1;
+}
+
+.tc-banner-center {
+  max-width: 1200px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px; /* Increased gap between content and image */
+  margin: 0 auto;
+  padding: 0 40px; /* Increased horizontal padding */
+  position: relative;
+  z-index: 10; /* Ensure content stays above background elements */
+  height: 100%;
+}
+
+.tc-banner-left {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  max-width: 450px;
+  flex: 0.5;
+  padding: 30px 0;
+  margin-left: 0;
+  margin-right: 0; /* Remove previous negative margin */
+  position: relative;
+  z-index: 15; /* Ensure text is on top */
+}
+
+.tc-badge-img {
+  height: 50px;
+  width: 50px;
+  margin-bottom: 16px;
+}
+
+.tc-banner-text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  width: 100%;
+}
+
+.tc-banner-title {
+  font-size: 2.2rem; /* Increased font size */
+  font-weight: 900;
+  color: #000;
+  margin: 0 0 12px 0;
+  line-height: 1.2;
+  text-align: left;
+}
+
+.tc-banner-desc {
+  font-size: 1.05rem; /* Increased font size */
+  color: #000;
+  margin: 8px 0 20px 0;
+  max-width: 380px; /* Increased max width */
+  text-align: left;
+  line-height: 1.4;
+}
+
+.tc-banner-btn {
+  background: #000;
+  color: #fff;
+  font-size: 0.85rem;
+  font-weight: 600;
+  padding: 8px 22px;
+  border-radius: 24px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  transition: background 0.18s, color 0.18s;
+  margin-top: 8px;
+  box-shadow: none;
+}
+.tc-banner-btn:hover {
+  background: #444;
+  color: #fff;
+}
+
+.tc-banner-right {
+  flex: 1;
+  display: flex;
+  justify-content: flex-start;
+  height: 360px; /* Match banner height */
+  position: relative;
+  overflow: visible;
+  margin-left: 0; /* Remove previous negative margin */
+}
+
+.tc-cards-img {
+  height: 100%;
+  width: auto;
+  max-width: none;
+  object-fit: cover;
+  z-index: 5;
+}
+
+@media (max-width: 1200px) {
+  .tc-banner-center {
+    max-width: 98vw;
+  }
+}
+
+@media (max-width: 900px) {
+  .tc-banner {
+    min-height: 400px; /* Increased height for mobile */
+  }
+  
+  .tc-banner-center {
+    flex-direction: column;
+    align-items: center;
+    padding: 30px 20px;
+  }
+  
+  .tc-banner-left {
+    max-width: 100%;
+    margin-left: 0;
+    padding: 30px 20px;
+    text-align: center;
+    align-items: center;
+    z-index: 20;
+  }
+  
+  .tc-banner-text {
+    align-items: center;
+    text-align: center;
+  }
+  
+  .tc-banner-title, .tc-banner-desc {
+    text-align: center;
+    max-width: 500px;
+  }
+  
+  .tc-banner-right {
+    display: none; /* Hide the image on mobile */
+  }
+  
+  .tc-circle-yellow {
+    left: -80px;
+    top: -100px;
+  }
+  
+  .tc-circle-green {
+    right: -50px;
+    bottom: -60px;
+  }
+}
+
+@media (max-width: 600px) {
+  .tc-banner {
+    min-height: 280px;
+  }
+  
+  .tc-banner-title {
+    font-size: 1.6rem;
+  }
+  
+  .tc-banner-desc {
+    font-size: 0.9rem;
+    max-width: 300px;
+  }
+  
+  .tc-badge-img {
+    height: 45px;
+    width: 45px;
+  }
+  
+  .tc-circle-yellow {
+    width: 150px;
+    height: 150px;
+  }
+  
+  .tc-circle-green {
+    width: 120px;
+    height: 120px;
+  }
+}
