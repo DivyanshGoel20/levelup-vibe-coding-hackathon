@@ -100,54 +100,89 @@ const DreamNextTrip = () => {
     setDestIndex(Math.min(destinations.length - CARD_COUNT, destIndex + CARD_COUNT));
   };
 
-  const indiaSwipeRef = useSwipeable(handleIndiaRight, handleIndiaLeft, () => indiaIndex + CARD_COUNT < indiaTrips.length, () => indiaIndex > 0);
-  const destSwipeRef = useSwipeable(handleDestRight, handleDestLeft, () => destIndex + CARD_COUNT < destinations.length, () => destIndex > 0);
+  const indiaSwipeRef = useSwipeable(
+    handleIndiaRight,
+    handleIndiaLeft,
+    () => indiaIndex + CARD_COUNT < indiaTrips.length,
+    () => indiaIndex > 0
+  );
+  const destSwipeRef = useSwipeable(
+    handleDestRight,
+    handleDestLeft,
+    () => destIndex + CARD_COUNT < destinations.length,
+    () => destIndex > 0
+  );
 
   return (
-    <section className="dream-trip-section" style={{marginTop: '60px', marginBottom: '60px'}}>
+    <section className="dream-trip-section" style={{ marginTop: '60px', marginBottom: '60px' }}>
       <div className="dream-trip-center">
-        <h3 className="dream-trip-title dream-trip-title-left" style={{fontSize: '24px', textAlign: 'left', alignSelf: 'flex-start'}}>Dream Your Next Trip</h3>
+        <h3
+          className="dream-trip-title dream-trip-title-left"
+          style={{ fontSize: '24px', textAlign: 'left', alignSelf: 'flex-start' }}
+        >
+          Dream Your Next Trip
+        </h3>
+
+        {/* Weekend getaways from New Delhi */}
         <div className="dream-trip-group">
-          <div className="dream-trip-label" style={{fontSize: '18px'}}>Weekend getaways from New Delhi</div>
+          <div className="dream-trip-label" style={{ fontSize: '18px' }}>
+            Weekend getaways from New Delhi
+          </div>
           <div className="dream-trip-cards-row-wrapper">
-            {indiaIndex > 0 && (
-              <button className="dream-trip-arrow left" style={{left: 0}} onClick={handleIndiaLeft}>
-                <Arrow direction="left" />
-              </button>
-            )}
             <div className="dream-trip-cards-row" ref={indiaSwipeRef}>
               {showIndia.map((item, idx) => (
-                <div key={item.label} className="dream-trip-card">
-                  <img src={item.img} alt={item.label} className="dream-trip-img" />
+                <div
+                  key={item.label}
+                  className="dream-trip-card"
+                  style={{ marginRight: idx !== showIndia.length - 1 ? 24 : 0 }}
+                >
+                  <div className="dream-trip-img-wrapper" style={{ position: 'relative' }}>
+                    <img src={item.img} alt={item.label} className="dream-trip-img" />
+                    {idx === 0 && indiaIndex > 0 && (
+                      <button className="dream-trip-arrow left" onClick={handleIndiaLeft}>
+                        <Arrow direction="left" />
+                      </button>
+                    )}
+                    {idx === showIndia.length - 1 && indiaIndex + CARD_COUNT < indiaTrips.length && (
+                      <button className="dream-trip-arrow right" onClick={handleIndiaRight}>
+                        <Arrow direction="right" />
+                      </button>
+                    )}
+                  </div>
                   <div className="dream-trip-card-label">{item.label}</div>
-                  {idx === showIndia.length - 1 && indiaIndex + CARD_COUNT < indiaTrips.length && (
-                    <button className="dream-trip-arrow right" style={{right: 0}} onClick={handleIndiaRight}>
-                      <Arrow direction="right" />
-                    </button>
-                  )}
                 </div>
               ))}
             </div>
           </div>
         </div>
+
+        {/* Top destinations for your next vacation */}
         <div className="dream-trip-group">
-          <div className="dream-trip-label" style={{fontSize: '18px'}}>Top destinations for your next vacation</div>
+          <div className="dream-trip-label" style={{ fontSize: '18px' }}>
+            Top destinations for your next vacation
+          </div>
           <div className="dream-trip-cards-row-wrapper">
-            {destIndex > 0 && (
-              <button className="dream-trip-arrow left" style={{left: 0}} onClick={handleDestLeft}>
-                <Arrow direction="left" />
-              </button>
-            )}
             <div className="dream-trip-cards-row" ref={destSwipeRef}>
               {showDest.map((item, idx) => (
-                <div key={item.label} className="dream-trip-card">
-                  <img src={item.img} alt={item.label} className="dream-trip-img" />
+                <div
+                  key={item.label}
+                  className="dream-trip-card"
+                  style={{ marginRight: idx !== showDest.length - 1 ? 24 : 0 }}
+                >
+                  <div className="dream-trip-img-wrapper" style={{ position: 'relative' }}>
+                    <img src={item.img} alt={item.label} className="dream-trip-img" />
+                    {idx === 0 && destIndex > 0 && (
+                      <button className="dream-trip-arrow left" onClick={handleDestLeft}>
+                        <Arrow direction="left" />
+                      </button>
+                    )}
+                    {idx === showDest.length - 1 && destIndex + CARD_COUNT < destinations.length && (
+                      <button className="dream-trip-arrow right" onClick={handleDestRight}>
+                        <Arrow direction="right" />
+                      </button>
+                    )}
+                  </div>
                   <div className="dream-trip-card-label">{item.label}</div>
-                  {idx === showDest.length - 1 && destIndex + CARD_COUNT < destinations.length && (
-                    <button className="dream-trip-arrow right" style={{right: 0}} onClick={handleDestRight}>
-                      <Arrow direction="right" />
-                    </button>
-                  )}
                 </div>
               ))}
             </div>
@@ -157,5 +192,6 @@ const DreamNextTrip = () => {
     </section>
   );
 };
+
 
 export default DreamNextTrip;

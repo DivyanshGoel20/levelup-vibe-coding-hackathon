@@ -119,7 +119,7 @@ function useSwipeable(onSwipeLeft, onSwipeRight, canSwipeLeft, canSwipeRight) {
 const MightLikeThese = () => {
     const [index, setIndex] = useState(0);
     const [badgeLoaded, setBadgeLoaded] = useState(false);
-    const [badgePath, setBadgePath] = useState("/TC_badge-2024.png");
+    const [badgePath, setBadgePath] = useState("/TC_badge-2024.jpg");
     const showItems = tourItems.slice(index, index + CARD_COUNT);
     
     // Check if the badge image exists and test alternative paths

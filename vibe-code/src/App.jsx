@@ -7,6 +7,9 @@ import TravelersChoiceBanner from './components/TravelersChoiceBanner';
 import Footer from './components/Footer';
 import WaysToTourDelhi from "./components/WaysToTourDelhi";
 import MightLikeThese from "./components/MightLikeThese";
+import TopHotels from "./components/TopHotels";
+import SponsorBanner from "./components/SponsorBanner";
+import Banner from "./components/Banner";
 import './App.css'
 
 function App() {
@@ -14,6 +17,9 @@ function App() {
     <>
       <Navbar />
       <WhereTo />
+      <Banner />
+      <TopHotels />
+      <SponsorBanner />
       <MightLikeThese />
       <WaysToTourDelhi />
       <div style={{marginBottom: '60px'}}></div>
