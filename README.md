@@ -44,7 +44,7 @@ In this challenge, I replicated the functionality of the popular **Tripadvisor**
 1. **Clone the repository:**
 
 ```bash
-git clone https://github.com/DivyanshGoel20/vibe-coding-hackathon.git
+git clone https://github.com/DivyanshGoel20/levelup-vibe-coding-hackathon.git
 ```
 
 2. **Navigate to the project folder:**
