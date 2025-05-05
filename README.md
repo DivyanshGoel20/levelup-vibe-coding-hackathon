@@ -50,7 +50,7 @@ git clone https://github.com/DivyanshGoel20/vibe-coding-hackathon.git
 2. **Navigate to the project folder:**
 
 ```bash
-cd tripadvisor-clone-with-new-features
+cd tripadvisor-clone
 ```
 
 3. **Install dependencies:**
