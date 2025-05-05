@@ -67,15 +67,22 @@ body, #root {
   outline: none;
   color: #222;
   font-size: 1.08rem;
-  font-weight: 600;
+  font-weight: 700;
+  line-height: 20px;
   font-family: 'Inter', Arial, Helvetica, sans-serif;
   padding: 8px 24px;
+  width: 62px;
+  height: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   border-radius: 999px;
   cursor: pointer;
   transition: background 0.18s, color 0.18s;
   position: relative;
   z-index: 2;
 }
+
 
 .dark-mode .navbar-link-btn {
   color: #fff;
@@ -171,7 +178,7 @@ body, #root {
   background: #f3f3f3;
 }
 
-.dark-mode .navbar-dropdown-item:hover {
+.dark-mode .navbar-dropdown-item:hover {  
   background: #232323;
 }
 

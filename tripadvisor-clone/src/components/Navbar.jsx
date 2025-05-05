@@ -1,19 +1,18 @@
-  import React, { useState, useRef, useEffect } from "react";
-  import "./Navbar.css";
+import React, { useState, useRef, useEffect } from "react";
+import "./Navbar.css";
+import SignInModal from "./SignInModal";
 
-  const navLinks = [
-    {
-      label: "Discover",
-      dropdown: ["Travelers' Choice", "Travel Stories"]
-    },
+const navLinks = [
+    { label: "Discover", dropdown: ["Travelers' Choice", "Travel Stories"] },
     { label: "Trips", dropdown: ["View my trips", "Start a new trip", "Create trip with AI"] },
     { label: "Review", dropdown: ["Write a review", "Post photos", "Add a place"] },
     { label: "More", dropdown: ["Cruises", "Rental Cars", "Forums"] }
-  ];
+];
 
-  const Navbar = () => {
+const Navbar = () => {
     const [activeDropdown, setActiveDropdown] = useState(null);
     const dropdownRef = useRef(null);
+    const [signInOpen, setSignInOpen] = useState(false);
 
     // Close dropdown on outside click
     useEffect(() => {
@@ -68,7 +67,10 @@
             <button className="navbar-darkmode-btn" onClick={() => document.body.classList.toggle('dark-mode')} title="Toggle dark mode">
               <span role="img" aria-label="dark mode" className="darkmode-icon">🌓</span>
             </button>
-            <button className="navbar-signin">Sign in</button>
+            <button className="navbar-signin" onClick={() => setSignInOpen(true)} style={{border: '2px solid #232323', fontWeight: 800}}>
+                Sign in
+            </button>
+            <SignInModal open={signInOpen} onClose={() => setSignInOpen(false)} />
           </div>
         </div>
       </nav>

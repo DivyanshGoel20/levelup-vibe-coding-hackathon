@@ -285,3 +285,30 @@
 .dark-mode .where-to-search-btn.flight-search-btn:hover {
   background: #444;
 }
+
+.where-to-title {
+  font-size: 54px;
+  font-weight: 900;
+  letter-spacing: 1.08px;
+  line-height: 65px;
+  margin: 48px 0px 0px;
+  text-align: center;
+  width: 1136px;
+  height: 65px;
+  max-width: 100vw;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media (max-width: 1200px) {
+  .where-to-title {
+    width: 98vw;
+    font-size: 6vw;
+    line-height: 7vw;
+    height: auto;
+  }
+}
