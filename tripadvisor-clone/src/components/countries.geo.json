@@ -1,0 +1,320 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "ADMIN": "India",
+        "ISO_A2": "IN",
+        "LATITUDE": 20.5937,
+        "LONGITUDE": 78.9629
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [68.1766451354, 7.96553477623],
+            [97.4025614766, 7.96553477623],
+            [97.4025614766, 35.4940095078],
+            [68.1766451354, 35.4940095078],
+            [68.1766451354, 7.96553477623]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ADMIN": "United States of America",
+        "ISO_A2": "US",
+        "LATITUDE": 37.0902,
+        "LONGITUDE": -95.7129
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [-125, 24],
+            [-66, 24],
+            [-66, 49],
+            [-125, 49],
+            [-125, 24]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ADMIN": "France",
+        "ISO_A2": "FR",
+        "LATITUDE": 46.6034,
+        "LONGITUDE": 1.8883
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [-5.142222, 41.33374],
+            [9.560016, 41.33374],
+            [9.560016, 51.089062],
+            [-5.142222, 51.089062],
+            [-5.142222, 41.33374]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ADMIN": "Brazil",
+        "ISO_A2": "BR",
+        "LATITUDE": -14.235,
+        "LONGITUDE": -51.9253
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [-74.0, -33.0],
+            [-34.0, -33.0],
+            [-34.0, 5.0],
+            [-74.0, 5.0],
+            [-74.0, -33.0]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ADMIN": "Australia",
+        "ISO_A2": "AU",
+        "LATITUDE": -25.2744,
+        "LONGITUDE": 133.7751
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [113.0, -44.0],
+            [154.0, -44.0],
+            [154.0, -10.0],
+            [113.0, -10.0],
+            [113.0, -44.0]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ADMIN": "Canada",
+        "ISO_A2": "CA",
+        "LATITUDE": 56.1304,
+        "LONGITUDE": -106.3468
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [-141.0, 41.7],
+            [-52.6, 41.7],
+            [-52.6, 83.1],
+            [-141.0, 83.1],
+            [-141.0, 41.7]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ADMIN": "Japan",
+        "ISO_A2": "JP",
+        "LATITUDE": 36.2048,
+        "LONGITUDE": 138.2529
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [129.0, 31.0],
+            [146.0, 31.0],
+            [146.0, 45.0],
+            [129.0, 45.0],
+            [129.0, 31.0]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ADMIN": "South Africa",
+        "ISO_A2": "ZA",
+        "LATITUDE": -30.5595,
+        "LONGITUDE": 22.9375
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [16.0, -35.0],
+            [33.0, -35.0],
+            [33.0, -22.0],
+            [16.0, -22.0],
+            [16.0, -35.0]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ADMIN": "United Kingdom",
+        "ISO_A2": "GB",
+        "LATITUDE": 55.3781,
+        "LONGITUDE": -3.436
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [-8.0, 49.0],
+            [2.0, 49.0],
+            [2.0, 61.0],
+            [-8.0, 61.0],
+            [-8.0, 49.0]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ADMIN": "Italy",
+        "ISO_A2": "IT",
+        "LATITUDE": 41.8719,
+        "LONGITUDE": 12.5674
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [6.6, 36.6],
+            [18.5, 36.6],
+            [18.5, 47.1],
+            [6.6, 47.1],
+            [6.6, 36.6]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ADMIN": "Egypt",
+        "ISO_A2": "EG",
+        "LATITUDE": 26.8206,
+        "LONGITUDE": 30.8025
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [24.7, 22.0],
+            [35.0, 22.0],
+            [35.0, 31.7],
+            [24.7, 31.7],
+            [24.7, 22.0]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ADMIN": "Russia",
+        "ISO_A2": "RU",
+        "LATITUDE": 61.524,
+        "LONGITUDE": 105.3188
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [30.0, 41.2],
+            [190.0, 41.2],
+            [190.0, 81.9],
+            [30.0, 81.9],
+            [30.0, 41.2]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ADMIN": "China",
+        "ISO_A2": "CN",
+        "LATITUDE": 35.8617,
+        "LONGITUDE": 104.1954
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [73.6, 18.2],
+            [135.1, 18.2],
+            [135.1, 53.6],
+            [73.6, 53.6],
+            [73.6, 18.2]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ADMIN": "Germany",
+        "ISO_A2": "DE",
+        "LATITUDE": 51.1657,
+        "LONGITUDE": 10.4515
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [5.9, 47.3],
+            [15.0, 47.3],
+            [15.0, 55.1],
+            [5.9, 55.1],
+            [5.9, 47.3]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ADMIN": "Mexico",
+        "ISO_A2": "MX",
+        "LATITUDE": 23.6345,
+        "LONGITUDE": -102.5528
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [-117.1, 14.5],
+            [-86.7, 14.5],
+            [-86.7, 32.7],
+            [-117.1, 32.7],
+            [-117.1, 14.5]
+          ]
+        ]
+      }
+    }
+  ]
+}

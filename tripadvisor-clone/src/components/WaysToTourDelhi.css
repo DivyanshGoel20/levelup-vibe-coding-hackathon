@@ -1,0 +1,286 @@
+.ways-section {
+  width: 100%;
+  background: #fff;
+  padding: 36px 0 24px 0;
+  margin-top: 60px;
+  display: flex;
+  justify-content: center;
+}
+
+.ways-center {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.ways-title {
+  font-size: 1.23rem;
+  font-weight: 700;
+  color: #222;
+  margin-bottom: 5px;
+  text-align: left;
+  align-self: flex-start;
+}
+
+.ways-subtitle {
+  font-size: 0.95rem;
+  color: #717171;
+  margin-bottom: 18px;
+  text-align: left;
+  align-self: flex-start;
+}
+
+.ways-cards-row-wrapper {
+  display: flex;
+  align-items: flex-start;
+  width: 100%;
+  position: relative;
+  margin-bottom: 0;
+  overflow: hidden;
+}
+
+.ways-cards-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  width: 100%;
+  gap: 0;
+  position: relative;
+  transition: transform 0.3s ease;
+}
+
+.ways-card {
+  background: none;
+  border-radius: 0;
+  box-shadow: none;
+  width: 272px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  overflow: visible;
+  position: relative;
+  cursor: pointer;
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+
+.ways-img-wrapper {
+  width: 272px;
+  height: 272px;
+  border-radius: 12px;
+  overflow: hidden;
+  position: relative;
+  background: #fff;
+}
+
+.ways-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.ways-card-label {
+  margin: 12px 0 0 0;
+  background: none;
+  color: #222;
+  font-size: 0.73rem;
+  font-weight: 700;
+  border-radius: 5px;
+  padding: 2px 10px 2px 10px;
+  letter-spacing: 0.03em;
+  z-index: 3;
+  border: 1.2px solid #bdbdbd;
+  display: inline-block;
+}
+
+.ways-card-title {
+  font-size: 1.06rem;
+  font-weight: 600;
+  color: #111;
+  margin: 15px 0 6px 0;
+  text-align: left;
+  line-height: 1.25;
+  max-width: 98%;
+  white-space: normal;
+  word-break: break-word;
+}
+
+.ways-card-rating-row {
+  margin-bottom: 5px;
+}
+
+.ways-rating {
+  font-size: 0.97rem;
+  color: #222;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 0;
+}
+
+.ways-rating-value {
+  color: #008009;
+  font-weight: bold;
+}
+
+.ways-rating-reviews {
+  color: #222;
+  font-weight: 400;
+  font-size: 0.93em;
+}
+
+.ways-rating-balls {
+  display: inline-flex;
+  align-items: center;
+  margin-left: 6px;
+}
+
+.ways-rating-balls svg {
+  margin-left: 2px;
+}
+
+.ways-rating-balls svg:first-child {
+  margin-left: 0;
+}
+
+.ways-card-price-row {
+  font-size: 0.96rem;
+  color: #222;
+  font-weight: 400;
+}
+
+.ways-card-price-label {
+  color: #222;
+  font-size: 0.97rem;
+}
+
+.ways-heart-btn {
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f2f2f2;
+  border: 1.25px solid #0000;
+  border-radius: 50px;
+  font-family: 'Trip Sans VF', Arial, sans-serif;
+  font-size: 13.3333px;
+  padding: 5px;
+  text-align: center;
+  cursor: pointer;
+  z-index: 2;
+  color: black;
+  outline: none;
+  transition: box-shadow 0.18s;
+}
+
+.ways-heart-btn svg {
+  display: block;
+  background: none;
+  border-radius: 50%;
+}
+
+/* Updated arrow button styles to be similar to dream-trip component */
+.ways-heart-btn .dream-trip-arrow-svg circle {
+  transition: stroke 0.18s, fill 0.18s;
+}
+
+.ways-heart-btn .dream-trip-arrow-svg polyline {
+  transition: stroke 0.18s;
+}
+
+.ways-heart-btn:hover .dream-trip-arrow-svg circle {
+  stroke: #888;
+  fill: #f3f3f3;
+}
+
+.ways-heart-btn:hover .dream-trip-arrow-svg polyline {
+  stroke: #000;
+}
+
+/* Navigation arrow buttons - positioned in the center of the sides */
+.ways-navigation-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f2f2f2;
+  border: 1.25px solid #0000;
+  border-radius: 50px;
+  padding: 5px;
+  text-align: center;
+  cursor: pointer;
+  z-index: 5;
+  color: black;
+  outline: none;
+  transition: box-shadow 0.18s;
+}
+
+.ways-navigation-btn.left {
+  left: 14px;
+}
+
+.ways-navigation-btn.right {
+  right: 14px;
+}
+
+.ways-navigation-btn .dream-trip-arrow-svg circle {
+  transition: stroke 0.18s, fill 0.18s;
+}
+
+.ways-navigation-btn .dream-trip-arrow-svg polyline {
+  transition: stroke 0.18s;
+}
+
+.ways-navigation-btn:hover .dream-trip-arrow-svg circle {
+  stroke: #888;
+  fill: #f3f3f3;
+}
+
+.ways-navigation-btn:hover .dream-trip-arrow-svg polyline {
+  stroke: #000;
+}
+
+@media (max-width: 1100px) {
+  .ways-center {
+    max-width: 98vw;
+  }
+  .ways-card {
+    width: 23vw;
+    height: auto;
+    min-width: 220px;
+  }
+  .ways-img-wrapper {
+    width: 23vw;
+    height: 23vw;
+    min-width: 220px;
+    min-height: 220px;
+  }
+}
+
+@media (max-width: 700px) {
+  .ways-cards-row {
+    gap: 7px;
+  }
+  .ways-card {
+    width: 45vw;
+    height: auto;
+    min-width: 160px;
+  }
+  .ways-img-wrapper {
+    width: 45vw;
+    height: 45vw;
+    min-width: 160px;
+    min-height: 160px;
+  }
+  .ways-title {
+    font-size: 1.15rem;
+  }
+}
