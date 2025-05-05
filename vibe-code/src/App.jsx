@@ -10,24 +10,28 @@ import MightLikeThese from "./components/MightLikeThese";
 import TopHotels from "./components/TopHotels";
 import SponsorBanner from "./components/SponsorBanner";
 import Banner from "./components/Banner";
+import GlobeExplorer from "./components/GlobeExplorer";
 import './App.css'
 
 function App() {
   return (
-    <>
-      <Navbar />
-      <WhereTo />
-      <Banner />
-      <TopHotels />
-      <SponsorBanner />
-      <MightLikeThese />
-      <WaysToTourDelhi />
-      <div style={{marginBottom: '60px'}}></div>
-      <ExploreMore />
-      <DreamNextTrip />
-      <TravelersChoiceBanner />
-      <Footer />
-    </>
+    <div className="app-main-bg">
+      <div className="main-content-container">
+        <Navbar />
+        <WhereTo />
+        <GlobeExplorer />
+        <Banner />
+        <TopHotels />
+        <SponsorBanner />
+        <MightLikeThese />
+        <WaysToTourDelhi />
+        <div style={{marginBottom: '60px'}}></div>
+        <ExploreMore />
+        <DreamNextTrip />
+        <TravelersChoiceBanner />
+        <Footer />
+      </div>
+    </div>
   )
 }
 

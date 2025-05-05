@@ -1,7 +1,23 @@
-import { defineConfig } from 'vite'
-import react from '@vitejs/plugin-react'
+import { defineConfig } from 'vite';
+import react from '@vitejs/plugin-react';
+import { fileURLToPath, URL } from 'url';
 
-// https://vite.dev/config/
 export default defineConfig({
   plugins: [react()],
-})
+  resolve: {
+    alias: {
+      cesium: 'cesium',
+    },
+  },
+  optimizeDeps: {
+    exclude: ['cesium'],
+  },
+  define: {
+    CESIUM_BASE_URL: JSON.stringify('/cesium'),
+  },
+  server: {
+    fs: {
+      allow: ['.'],
+    },
+  },
+});

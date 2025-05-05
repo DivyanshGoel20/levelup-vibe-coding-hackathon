@@ -13,7 +13,10 @@
   position: relative; /* For absolute positioning children */
 }
 
-/* Decorative circles as separate elements for better positioning */
+.dark-mode .tc-banner {
+  background: #181818;
+}
+
 .tc-circle-yellow {
   position: absolute;
   width: 300px; /* Increased size */
@@ -26,6 +29,10 @@
   z-index: 1;
 }
 
+.dark-mode .tc-circle-yellow {
+  background: #FFC107;
+}
+
 .tc-circle-green {
   position: absolute;
   width: 260px; /* Increased size */
@@ -36,6 +43,10 @@
   right: 2%;
   bottom: -100px;
   z-index: 1;
+}
+
+.dark-mode .tc-circle-green {
+  background: #34C759;
 }
 
 .tc-banner-center {
@@ -88,6 +99,10 @@
   text-align: left;
 }
 
+.dark-mode .tc-banner-title {
+  color: #fff;
+}
+
 .tc-banner-desc {
   font-size: 1.05rem; /* Increased font size */
   color: #000;
@@ -95,6 +110,10 @@
   max-width: 380px; /* Increased max width */
   text-align: left;
   line-height: 1.4;
+}
+
+.dark-mode .tc-banner-desc {
+  color: #e0e0e0;
 }
 
 .tc-banner-btn {
@@ -111,27 +130,33 @@
   margin-top: 8px;
   box-shadow: none;
 }
+
+.dark-mode .tc-banner-btn {
+  background: #fff;
+  color: #181818;
+}
+
 .tc-banner-btn:hover {
   background: #444;
   color: #fff;
 }
 
-.tc-banner-right {
-  flex: 1;
-  display: flex;
-  justify-content: flex-start;
-  height: 360px; /* Match banner height */
-  position: relative;
-  overflow: visible;
-  margin-left: 0; /* Remove previous negative margin */
+.dark-mode .tc-banner-btn:hover {
+  background: #333;
+  color: #fff;
 }
 
 .tc-cards-img {
-  height: 100%;
-  width: auto;
-  max-width: none;
-  object-fit: cover;
+  height: auto;
+  width: 100%;
+  max-width: 460px;
+  object-fit: contain;
   z-index: 5;
+}
+
+.tc-banner-right {
+  justify-content: center;
+  align-items: center;
 }
 
 @media (max-width: 1200px) {
@@ -144,13 +169,13 @@
   .tc-banner {
     min-height: 400px; /* Increased height for mobile */
   }
-  
+
   .tc-banner-center {
     flex-direction: column;
     align-items: center;
     padding: 30px 20px;
   }
-  
+
   .tc-banner-left {
     max-width: 100%;
     margin-left: 0;
@@ -159,26 +184,26 @@
     align-items: center;
     z-index: 20;
   }
-  
+
   .tc-banner-text {
     align-items: center;
     text-align: center;
   }
-  
+
   .tc-banner-title, .tc-banner-desc {
     text-align: center;
     max-width: 500px;
   }
-  
+
   .tc-banner-right {
     display: none; /* Hide the image on mobile */
   }
-  
+
   .tc-circle-yellow {
     left: -80px;
     top: -100px;
   }
-  
+
   .tc-circle-green {
     right: -50px;
     bottom: -60px;
@@ -189,26 +214,26 @@
   .tc-banner {
     min-height: 280px;
   }
-  
+
   .tc-banner-title {
     font-size: 1.6rem;
   }
-  
+
   .tc-banner-desc {
     font-size: 0.9rem;
     max-width: 300px;
   }
-  
+
   .tc-badge-img {
     height: 45px;
     width: 45px;
   }
-  
+
   .tc-circle-yellow {
     width: 150px;
     height: 150px;
   }
-  
+
   .tc-circle-green {
     width: 120px;
     height: 120px;
